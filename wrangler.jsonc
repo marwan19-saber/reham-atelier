@@ -1,0 +1,31 @@
+{
+  "name": "reham-atelier",
+  "main": "worker.js",
+  "compatibility_date": "2026-06-01",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "no_bundle": true,
+  "observability": {
+    "enabled": true
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "STORE",
+        "class_name": "Store"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "Store"
+      ]
+    }
+  ],
+  "vars": {
+    "SETUP_CODE_SHA256": "598cf58ed64f0d357e6f8d16bf9cb70c38e59a804c794ae8884eba99677acc80"
+  }
+}
